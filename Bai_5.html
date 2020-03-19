@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+
+
+    function timChomSao(n) {
+        let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let kq = ''
+        for (i = 0; i <= array1.length; i++) {
+            if (n == array1[i]) {
+                kq = array2[i]
+                alert('chòm sao tương ứng là: ' + kq)
+                break;
+            }
+        }
+        if(kq === '')alert('Không tìm thấy')
+    }
+
+    let a = prompt('nhập tên ngôi của ngôi sao')
+    timChomSao(a)
+</script>
+</body>
+</html>
