@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script language="JavaScript">
+    function tinh(so1,so2) {
+        let _so1 = parseInt(so1)
+        let _so2 = parseInt(so2)
+        let kq = 0
+        if (_so1 > _so2){
+            alert('tham số thứ nhất lớn hơn tham số thứ 2')
+        }else if (_so1 <= _so2){
+            kq = _so1 + _so2
+            alert('tổng của 2 tham số là: ' + kq)
+        }
+    }
+    let a = prompt('nhập số thứ nhất');
+    let b = prompt('nhập số thứ hai');
+    tinh(a,b)
+</script>
+</body>
+</html>
